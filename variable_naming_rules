@@ -1,0 +1,55 @@
+
+Variable Naming Rules
+Introduction
+Variable names are subject to certain restrictions in Python. Keep the following rules in mind as you write your own programs.
+
+
+
+Variable Naming Rules
+No spaces are allowed.
+
+The first character must be a letter (lowercase or uppercase) or an underscore.
+
+Only letters, numbers and underscores are permitted after the first character.
+
+Variable names are case-sensitive. ​name​ and ​Name​ are two distinct, separate variables.
+
+Variable names should describe the data that they are referencing.
+
+Use underscores to separate multiple words. This is called snake case style because the text resembles a snake.
+
+Example: my_favorite_flavor_of_ice_cream
+
+
+Reserved Keywords
+Python’s reserved keywords cannot be used as a variable name. These are words that are used for various operations in the language (like print). They are listed below:
+
+and
+assert
+break
+class
+continue
+def
+del
+elif
+else
+except
+exec
+finally
+for
+from
+global
+if
+import
+in
+is
+lambda
+nonlocal
+not
+or
+pass
+print
+raise
+return
+try
+while

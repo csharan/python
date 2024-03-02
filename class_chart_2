@@ -1,0 +1,49 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+class mychart:
+    def __init__(self, cname, ctype): ## only one init method can be implemented
+        self.cname1 = cname
+        self.ctype1 = ctype
+
+    def pie_chart(self,np1):
+        y = np.array(np1)
+        plt.pie(y)
+        plt.title(self.cname1 + " " + self.ctype1)
+        plt.show()
+    
+    def plt_chart(self,np1, np2):
+        xpoints = np.array(np1)
+        ypoints = np.array(np2)
+        plt.plot(xpoints, ypoints, marker = 'o')
+        plt.title(self.cname1 + " " + self.ctype1)
+        plt.show()
+
+
+    def hitst_gram(self,np1):
+        y = np.array(np1)
+        plt.hist(y)
+        plt.title(self.cname1 + " " + self.ctype1)
+        plt.show()
+
+
+    def bar_chart(self,np1, np2):
+        #x = np.array(np1)
+        #y = np.array(np2)
+        x = list(np1) # this works
+        y = list(np2) # this works
+        plt.bar(x,y)
+        plt.title(self.cname1 + " " + self.ctype1)
+        plt.show()
+
+#chart1 = mychart("pie_sample", "pie_chart") # creating an object with 2 attributes...
+#chart1.pie_chart ([35, 25, 25, 15])
+
+#chart2 = mychart("plot_sample", "plot_chart")
+#chart2.plt_chart ([1, 80],[3, 100])
+
+#chart3 = mychart("hist_sample", "hist_chart")
+#chart3.hitst_gram ([1, 8])
+        
+chart4 = mychart("bar_chart","bar_chart_1")
+chart4.bar_chart(["2000", "2005", "2010","2015","2020","2025"],[3, 8, 1, 10,15,20])

@@ -18,7 +18,7 @@ def sum_of_list(listvar):
     #return j
     return j / k
 
-a = sum_of_list([5,6,7])
+a = sum_of_list([5,6,7,8])
 
 print ('sum of given list is ', a)
 
